@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="190.0" layoutY="14.0" text="Editácia používateľa">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="71.0" text="Meno:" />
+      <Label layoutX="29.0" layoutY="109.0" text="ID čipu:" />
+      <CheckBox fx:id="isAdminCheckBox" layoutX="27.0" layoutY="154.0" mnemonicParsing="false" text="Je admin" />
+      <TextField fx:id="nameTextField" layoutX="126.0" layoutY="67.0" />
+      <TextField fx:id="chipIdTextField" layoutX="126.0" layoutY="105.0" />
+      <Label layoutX="27.0" layoutY="192.0" text="Čítačky, cez ktoré môže prejsť:" />
+      <FlowPane fx:id="cardReadersFlowPane" layoutX="26.0" layoutY="217.0" orientation="VERTICAL" prefHeight="150.0" prefWidth="558.0" />
+      <Button layoutX="532.0" layoutY="367.0" mnemonicParsing="false" onAction="#saveButtonClick" text="Uložiť" />
+   </children>
+</AnchorPane>
